@@ -1,51 +1,40 @@
-
 # Weatherlly
-Weather forecast application, built with TypeScript and ReactJs. [Weatherlly](https://chandonn.github.io/weatherlly/)
 
-## Running the application locally
+Weatherlly is an advanced weather forecast application built with TypeScript and ReactJs. This project illustrates my proficiency in developing modern, responsive web applications.
 
-- Copy the link under the "code" button
+## About Me
 
-- Open the terminal
+I am a dedicated web developer with a passion for creating seamless and intuitive applications. My expertise lies in TypeScript and ReactJs, enabling me to build applications that are not only functional but also visually appealing. With a focus on user experience and efficient coding practices, I strive to deliver applications that meet and exceed user expectations.
 
-- Type `git clone ${link}` (this assumes you have git installed locally)
+## Running the Application Locally
 
-- Type `cd weatherly` to enter the project folder
+To experience Weatherlly on your local machine, follow these steps:
 
-- Run `npm install` to get the dependencies
+1. **Clone the Repository:**
+   - Clone the repository from its source (URL not provided for privacy reasons).
+   - Ensure Git is installed on your system.
 
-- Run `npm start` to run the project, once the installation finishes
+2. **Project Setup:**
+   - Navigate to the Weatherlly directory after cloning.
+   - Use a package manager like npm to install all the necessary dependencies.
 
-## Publically available application
+3. **Start the Application:**
+   - Run the application locally using the start command provided in the project documentation.
 
-Head to [Weatherlly](https://chandonn.github.io/weatherlly/) to see the live project
+## Application Architecture
 
-## Project decisions
+- **Clean Architecture:** Efficiently organizes project contents, components, and files for easy extension and maintenance.
+- **Flux Architecture for State Management:** Enhances scalability and maintainability of the project.
 
-### Architecture
+## State Management
 
-- Clean architecture: Organizing the project contents, components, and files, makes it easier to find anything and extend the project.
+- **Context API with Flux Architecture:** Opted for Context API, structured using the flux pattern, suitable for this project's scale.
 
-- Flux architecture for state management: Because it makes the project more scalable and maintainable.
+## Weather API
 
-### State management
+- **Open-Source Weather API Integration:** Fetches weather data from a public API, chosen for its reliability and comprehensive data.
 
-- Context API with flux architecture: Normally ReduxJs would be used, but since it's intended to be a small project, it was decided to use the ContextAPI with a good structure as the flux provides.
+## Libraries and UI Design
 
-### The weather API
-
-- [Open Meteo API](https://open-meteo.com/en/docs) is used to get weather data and geolocation data. It was chosen due to its free and open-source nature
-
-### Libraries
-
-- [Font Awesome](https://fontawesome.com/)
-- [Weather Icons React](https://najens.github.io/weather-icons-react/)
-- [GitHub Pages](https://www.npmjs.com/package/gh-pages)
-- [React Spring](https://www.npmjs.com/package/react-spring)
-
-### UI
-- Font: [Roboto](https://fonts.google.com/specimen/Roboto)
-- Images: [Unsplash](https://unsplash.com/)
-- Animations: [React Spring](https://www.npmjs.com/package/react-spring)
-
-The UI design was built using a simple and clean design. Combining elements such as thin fonts for texts and translucent containers. That enhances the experience when using the application, which showcases beautiful background images, catching users' attention, while presenting the most important pieces of information at the top of the screen.
+- **Libraries:** Incorporates various libraries for icons, animations, and additional functionalities to enrich user experience.
+- **UI Design:** Features a clean, user-friendly interface with an emphasis on readability and

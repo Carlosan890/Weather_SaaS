@@ -1,0 +1,87 @@
+.forecast {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forecast-day {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    background-color: rgba(18, 78, 120, 0.5);
+    padding: 2% 0;
+}
+
+.forecast-day svg {
+    height: 4em;
+    width: 4em;
+}
+
+.forecast-day:hover {
+    background-color: #F0F0C9;
+    color: #124E78;
+}
+
+.forecast-day + .forecast-day {
+    border-left: 1px solid;
+}
+
+.forecast-day h3 {
+    font-size: 1.5em;
+}
+
+.forecast-day svg + h3 {
+    margin: 0.5em 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .forecast-day h3 {
+        font-size: 1.2em;
+    }
+
+    .forecast-day svg {
+        height: 3em;
+        width: 3em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .forecast-day h5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .forecast {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    .forecast-day + .forecast-day {
+        border-left: 0;
+        border-top: 1px solid rgba(18, 78, 120, 0.3);
+    }
+    
+    .forecast-day {
+        padding: 0 2%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .forecast-day svg {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .forecast-day > div:first-child {
+        display: flex;
+        align-items: center;
+    }
+}

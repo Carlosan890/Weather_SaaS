@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #F0F0C9;
+    padding: 12px 20px;
+    overflow: hidden;
+}
+
+.menu .close {
+    width: 100%;
+    text-align: end;
+    cursor: pointer;
+}
+
+.menu .menu-title {
+    margin-top: 20px;
+    color: #124E78;
+    font-weight: 300;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-option {
+    cursor: pointer;
+    padding: 2em 1em;
+    background-color: transparent;
+    transition: all 0.2s;
+    color: #124E78;
+}
+
+.menu-option:hover {
+    color: #D74E09;
+}
+
+.menu-option h3 {
+    font-size: 3em;
+}
